@@ -18,6 +18,27 @@
 2. **Green**: 테스트를 통과하는 최소한의 코드 작성
 3. **Refactor**: 코드 개선 및 중복 제거
 
+## 테스트 실행 방법
+
+### Chapter 1 - Money 예제
+
+```bash
+# 모든 테스트 실행
+python -m pytest ch-1/tests/
+
+# 특정 테스트 파일 실행
+python -m pytest ch-1/tests/test_currency.py
+
+# 특정 테스트 케이스 실행
+python -m pytest ch-1/tests/test_currency.py::TestMoney::test_multiplication
+
+# 상세한 출력과 함께 실행
+python -m pytest ch-1/tests/ -v
+
+# 실패한 테스트만 다시 실행
+python -m pytest ch-1/tests/ --lf
+```
+
 ## 참고 자료
 
 - Kent Beck, "Test-Driven Development: By Example"
