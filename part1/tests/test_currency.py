@@ -1,5 +1,5 @@
 import pytest
-from ch1.currency import Money, dollar, won
+from part1.currency import Money, dollar, won
 
 
 class TestMoney:
